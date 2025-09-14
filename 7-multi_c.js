@@ -1,7 +1,8 @@
-const arg = process.argv[2];
-const x = parseInt(arg);
+#!/usr/bin/node// Get the first argument
+const x = parseInt(process.argv[2]);
 
-if (isNaN(x) || x <= 0) {
+// Check if x is a positive number
+if (!x || x <= 0) {
   console.log("Missing number of occurrences");
 } else {
   let i = 0;
